@@ -1,0 +1,3 @@
+[submodule "Yeti_Frenzy/Assets/Shared"]
+	path = Yeti_Frenzy/Assets/Shared
+	url = https://github.com/iirlas/Unity_Shared.git
