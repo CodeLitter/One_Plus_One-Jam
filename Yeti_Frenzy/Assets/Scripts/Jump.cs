@@ -19,8 +19,8 @@ public class Jump : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		bool is_pressed = CrossPlatformInputManager.GetButtonDown("Action");
-		if (is_pressed)
+		bool is_down = CrossPlatformInputManager.GetButtonDown("Action");
+		if (is_down && rigidbody.velocity.y == 0.0f)
 		{
 			rigidbody.AddForce(0.0f, force, 0.0f, ForceMode.Impulse);
 		}

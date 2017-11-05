@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.CrossPlatformInput;
 
 [RequireComponent(typeof(Rigidbody))]
 public class GravityScalar : MonoBehaviour
@@ -21,7 +22,8 @@ public class GravityScalar : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		if (rigidbody.velocity.y > 0)
+		bool is_pressed = CrossPlatformInputManager.GetButton("Action");
+		if (rigidbody.velocity.y > 0 && is_pressed)
 		{
 			Physics.gravity = gravity * positiveMultiplier;
 		}
