@@ -6,7 +6,7 @@ using UnityStandardAssets.CrossPlatformInput;
 [RequireComponent(typeof(Rigidbody))]
 public class Movement : MonoBehaviour 
 {
-	public float speed = 50.0f;
+	public float speed = 10.0f;
 	[HideInInspector]
 	public new Rigidbody rigidbody;
 
@@ -16,17 +16,11 @@ public class Movement : MonoBehaviour
 	void Start ()
 	{
 		rigidbody = GetComponent<Rigidbody>();
+		rigidbody.freezeRotation = true;
 	}
 
 	void FixedUpdate ()
 	{
-		if (direction != Vector3.zero)
-		{
-			Vector3 force = Camera.main.transform.rotation * direction * speed;
-			force.y = rigidbody.velocity.y;
-			rigidbody.velocity = force;
-			transform.forward = rigidbody.velocity;
-		}
 	}
 
 	// Update is called once per frame
@@ -35,5 +29,14 @@ public class Movement : MonoBehaviour
 		float horizontal = CrossPlatformInputManager.GetAxis("Horizontal");
 		float vertical = CrossPlatformInputManager.GetAxis("Vertical");
 		direction = new Vector3(horizontal, 0, vertical);
+
+		if (direction != Vector3.zero)
+		{
+			Vector3 force = Camera.main.transform.rotation * direction * speed;
+			force.y = 0.0f;
+			transform.forward = force;
+			force.y = rigidbody.velocity.y;
+			rigidbody.velocity = force;
+		}
 	}
 }
