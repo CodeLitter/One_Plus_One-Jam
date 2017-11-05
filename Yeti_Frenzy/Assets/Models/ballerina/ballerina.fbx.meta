@@ -1,0 +1,212 @@
+fileFormatVersion: 2
+guid: 2615e48139cdea941a541186f89a65e5
+timeCreated: 1509861014
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: ballerina_MeshPart0
+    100004: ballerina_MeshPart1
+    100006: ballerina_MeshPart10
+    100008: ballerina_MeshPart11
+    100010: ballerina_MeshPart12
+    100012: ballerina_MeshPart13
+    100014: ballerina_MeshPart14
+    100016: ballerina_MeshPart15
+    100018: ballerina_MeshPart16
+    100020: ballerina_MeshPart17
+    100022: ballerina_MeshPart18
+    100024: ballerina_MeshPart19
+    100026: ballerina_MeshPart2
+    100028: ballerina_MeshPart20
+    100030: ballerina_MeshPart21
+    100032: ballerina_MeshPart22
+    100034: ballerina_MeshPart23
+    100036: ballerina_MeshPart3
+    100038: ballerina_MeshPart4
+    100040: ballerina_MeshPart5
+    100042: ballerina_MeshPart6
+    100044: ballerina_MeshPart7
+    100046: ballerina_MeshPart8
+    100048: ballerina_MeshPart9
+    400000: //RootNode
+    400002: ballerina_MeshPart0
+    400004: ballerina_MeshPart1
+    400006: ballerina_MeshPart10
+    400008: ballerina_MeshPart11
+    400010: ballerina_MeshPart12
+    400012: ballerina_MeshPart13
+    400014: ballerina_MeshPart14
+    400016: ballerina_MeshPart15
+    400018: ballerina_MeshPart16
+    400020: ballerina_MeshPart17
+    400022: ballerina_MeshPart18
+    400024: ballerina_MeshPart19
+    400026: ballerina_MeshPart2
+    400028: ballerina_MeshPart20
+    400030: ballerina_MeshPart21
+    400032: ballerina_MeshPart22
+    400034: ballerina_MeshPart23
+    400036: ballerina_MeshPart3
+    400038: ballerina_MeshPart4
+    400040: ballerina_MeshPart5
+    400042: ballerina_MeshPart6
+    400044: ballerina_MeshPart7
+    400046: ballerina_MeshPart8
+    400048: ballerina_MeshPart9
+    2300000: ballerina_MeshPart0
+    2300002: ballerina_MeshPart1
+    2300004: ballerina_MeshPart10
+    2300006: ballerina_MeshPart11
+    2300008: ballerina_MeshPart12
+    2300010: ballerina_MeshPart13
+    2300012: ballerina_MeshPart14
+    2300014: ballerina_MeshPart15
+    2300016: ballerina_MeshPart16
+    2300018: ballerina_MeshPart17
+    2300020: ballerina_MeshPart18
+    2300022: ballerina_MeshPart19
+    2300024: ballerina_MeshPart2
+    2300026: ballerina_MeshPart20
+    2300028: ballerina_MeshPart21
+    2300030: ballerina_MeshPart22
+    2300032: ballerina_MeshPart23
+    2300034: ballerina_MeshPart3
+    2300036: ballerina_MeshPart4
+    2300038: ballerina_MeshPart5
+    2300040: ballerina_MeshPart6
+    2300042: ballerina_MeshPart7
+    2300044: ballerina_MeshPart8
+    2300046: ballerina_MeshPart9
+    3300000: ballerina_MeshPart0
+    3300002: ballerina_MeshPart1
+    3300004: ballerina_MeshPart10
+    3300006: ballerina_MeshPart11
+    3300008: ballerina_MeshPart12
+    3300010: ballerina_MeshPart13
+    3300012: ballerina_MeshPart14
+    3300014: ballerina_MeshPart15
+    3300016: ballerina_MeshPart16
+    3300018: ballerina_MeshPart17
+    3300020: ballerina_MeshPart18
+    3300022: ballerina_MeshPart19
+    3300024: ballerina_MeshPart2
+    3300026: ballerina_MeshPart20
+    3300028: ballerina_MeshPart21
+    3300030: ballerina_MeshPart22
+    3300032: ballerina_MeshPart23
+    3300034: ballerina_MeshPart3
+    3300036: ballerina_MeshPart4
+    3300038: ballerina_MeshPart5
+    3300040: ballerina_MeshPart6
+    3300042: ballerina_MeshPart7
+    3300044: ballerina_MeshPart8
+    3300046: ballerina_MeshPart9
+    4300000: ballerina_MeshPart0
+    4300002: ballerina_MeshPart1
+    4300004: ballerina_MeshPart2
+    4300006: ballerina_MeshPart3
+    4300008: ballerina_MeshPart4
+    4300010: ballerina_MeshPart5
+    4300012: ballerina_MeshPart6
+    4300014: ballerina_MeshPart7
+    4300016: ballerina_MeshPart8
+    4300018: ballerina_MeshPart9
+    4300020: ballerina_MeshPart10
+    4300022: ballerina_MeshPart11
+    4300024: ballerina_MeshPart12
+    4300026: ballerina_MeshPart13
+    4300028: ballerina_MeshPart14
+    4300030: ballerina_MeshPart15
+    4300032: ballerina_MeshPart16
+    4300034: ballerina_MeshPart17
+    4300036: ballerina_MeshPart18
+    4300038: ballerina_MeshPart19
+    4300040: ballerina_MeshPart20
+    4300042: ballerina_MeshPart21
+    4300044: ballerina_MeshPart22
+    4300046: ballerina_MeshPart23
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ballerina
+    second: {fileID: 2100000, guid: 089d5b65cb3dd2f4a8772761dfd17d0e, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
