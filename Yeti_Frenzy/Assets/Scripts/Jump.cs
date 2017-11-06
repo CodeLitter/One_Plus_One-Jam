@@ -3,38 +3,38 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
-[RequireComponent(typeof(Rigidbody))]
-public class Jump : MonoBehaviour 
+[CreateAssetMenu(menuName="Modules/Jump")]
+public class Jump : Module 
 {	
 	public float force = 10.0f;
 	public float positiveMultiplier = 0.5f;
 	public float negativeMultiplier = 2.0f;
-	[HideInInspector]
-	public new Rigidbody rigidbody;
 	private Vector3 gravity;
 
 	// Use this for initialization
-	void Start ()
+	override public void Start (Player player)
 	{
-		rigidbody = GetComponent<Rigidbody>();
 		gravity = Physics.gravity;
 	}
 	
 	// Update is called once per frame
-	void Update ()
+	override public void Update (Player player)
 	{
 		bool is_down = CrossPlatformInputManager.GetButtonDown("Action");
-		if (is_down && rigidbody.velocity.y == 0.0f)
+		float ground_distance = player.GetComponent<Collider>().bounds.extents.y;
+		bool is_grounded = Physics.Raycast(player.transform.position, Vector3.down, ground_distance + 0.1f);
+		if (is_down && is_grounded)
 		{
-			rigidbody.AddForce(0.0f, force, 0.0f, ForceMode.Impulse);
+			player.rigidbody.AddForce(0.0f, force, 0.0f, ForceMode.Impulse);
 		}
 
 		bool is_pressed = CrossPlatformInputManager.GetButton("Action");
-		if (rigidbody.velocity.y > 0 && is_pressed)
+		if (player.rigidbody.velocity.y > 0 && is_pressed)
 		{
 			Physics.gravity = gravity * positiveMultiplier;
 		}
-		else if (rigidbody.velocity.y < 0)
+
+		else if (player.rigidbody.velocity.y < 0)
 		{
 			Physics.gravity = gravity * negativeMultiplier;
 		}

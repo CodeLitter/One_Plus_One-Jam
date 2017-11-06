@@ -3,28 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
-[RequireComponent(typeof(Rigidbody))]
-public class Movement : MonoBehaviour 
+[CreateAssetMenu(menuName="Modules/Movement")]
+public class Movement : Module
 {
 	public float speed = 10.0f;
-	[HideInInspector]
-	public new Rigidbody rigidbody;
 
 	private Vector3 direction;
 
 	// Use this for initialization
-	void Start ()
+	override public void Start (Player player)
 	{
-		rigidbody = GetComponent<Rigidbody>();
-		rigidbody.freezeRotation = true;
+		player.rigidbody.freezeRotation = true;
 	}
 
-	void FixedUpdate ()
+	override public void FixedUpdate (Player player)
 	{
 	}
 
 	// Update is called once per frame
-	void Update ()
+	override public void Update (Player player)
 	{
 		float horizontal = CrossPlatformInputManager.GetAxis("Horizontal");
 		float vertical = CrossPlatformInputManager.GetAxis("Vertical");
@@ -34,9 +31,9 @@ public class Movement : MonoBehaviour
 		{
 			Vector3 force = Camera.main.transform.rotation * direction * speed;
 			force.y = 0.0f;
-			transform.forward = force;
-			force.y = rigidbody.velocity.y;
-			rigidbody.velocity = force;
+			player.transform.forward = force;
+			force.y = player.rigidbody.velocity.y;
+			player.rigidbody.velocity = force;
 		}
 	}
 }

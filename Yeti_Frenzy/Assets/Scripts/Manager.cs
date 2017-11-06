@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class Manager : ScriptableSingleton<Manager> 
 {
-	public List<MonoBehaviour> modules;
+	public List<Module> modules = new List<Module>();
 }

@@ -2,22 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Health : MonoBehaviour {
+[CreateAssetMenu(menuName="Modules/Health")]
+public class Health : Module {
 
 	public float amount = 100.0f;
 
 	// Use this for initialization
-	void Start ()
+	override public void Start (Player player)
 	{
 		
 	}
 	
 	// Update is called once per frame
-	void Update ()
+	override public void Update (Player player)
 	{
 		if (amount <= 0.0f)
 		{
-			gameObject.SetActive(false);
+			player.gameObject.SetActive(false);
 		}	
 	}
 
