@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: a92ad38b2b16f6846a115f58b7cdbf96
+timeCreated: 1509947501
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Bearpaw
+  fontNames:
+  - Bearpaw
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
