@@ -26,6 +26,8 @@ public class TextBoxManager : MonoBehaviour
     [Space(10)]
     public Image charImage;
     [Space(10)]
+    public Text charName;
+    [Space(10)]
     public TextAsset textFile;
 
     private string[] textLine;
@@ -97,10 +99,12 @@ public class TextBoxManager : MonoBehaviour
     {
         if (dialogInfo[currentLine].name == "narrator")
         {
+            charName.text = "";
             charImage.GetComponent<Image>().enabled = false;
         }
         else
-        {            
+        {
+            charName.text = dialogInfo[currentLine].name;
             Sprite newSprite = Resources.Load<Sprite>(characterPath + dialogInfo[currentLine].name + "/" + dialogInfo[currentLine].emote);
             charImage.GetComponent<Image>().enabled = true;
             charImage.GetComponent<Image>().sprite = newSprite;

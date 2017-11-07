@@ -1,13 +1,15 @@
-narrator:none:Yeti steps out into the cold winter snow but remains unfazed by its bitter harsh sting as he begins his long trudge through the snow
-yuri:smile_open_eyes:"Yeti-senpai?"
-narrator:none:Yeti stops as he hears a familiar voice call out from behind him and he turns in surprise
-yeti:smile_open_eyes:"Rawr?" (Yuri-Chan)
-narrator:none:The girls cheeks blush as Yeti speaks her name
-yuri:smile_open_eyes:"Yes Yeti-Senpai its me"
-narrator:none:turns away from the girl with a pensive look on his face
-yeti:frown_open_eyes:Graw raw Graw Graw Raw (you Shound't have come back, not now)
-narrator:none:yeti's words cut the girl deep and her eyes begin to moisen with tears
-yuri:frown_open_eyes:"But yeti-senpai i had to come. I have to tell you that I..."
-narrator:none:yeti raises his paw to silence her words
-yeti:frown_closed_eyes:Mraw Graw Graw Raw... (no don't say it, i know what you want to say and I...)
-narrator:none:yeti pauses his words before turning back to the face the girl
+narrator:none:Yeti steps out into the cold winter snow but remains unfazed by its bitter harsh sting as he begins his long trudge through the snow.
+Yuri-Chan:smile_open_eyes:"Yeti-senpai?"
+narrator:none:Yeti stops as he hears a familiar voice call out from behind him and turns in surprise.
+Yeti:smile_open_eyes:"Rawr?" (Yuri-Chan?)
+narrator:none:The girls cheeks blush as Yeti speaks her name.
+Yuri-Chan:smile_open_eyes:"Yes Yeti-Senpai its me."
+narrator:none:Turns away from the girl with a pensive look on his face.
+Yeti:frown_open_eyes:Graw raw Graw Graw Raw! (You Shound't have come back, not now!)
+narrator:none:Yeti's words cut the girl deep and her eyes begin to moisten with tears.
+Yuri-Chan:frown_open_eyes:"But yeti-senpai I had to come. I have to tell you that I..."
+narrator:none:yeti Raises his paw to silence her words.
+Yeti:frown_closed_eyes:Mraw Graw Graw Raw... (No don't, I know what you want to say and I...)
+narrator:none:Yeti pauses his words before turning back to the face the girl
+narrator:none:Suddenly a Wild Spanish Ninja appears
+zorro-pengu:smile_wink_eyes:Konnichiwa mi amigos.
