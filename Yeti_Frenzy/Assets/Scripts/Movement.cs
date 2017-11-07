@@ -25,7 +25,7 @@ public class Movement : Module
 	{
 		float horizontal = CrossPlatformInputManager.GetAxis("Horizontal");
 		float vertical = CrossPlatformInputManager.GetAxis("Vertical");
-		direction = new Vector3(horizontal, 0, vertical);
+		direction = new Vector3(horizontal, 0, vertical).normalized;
 
 		if (direction != Vector3.zero)
 		{
