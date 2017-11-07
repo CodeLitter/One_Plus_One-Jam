@@ -14,8 +14,9 @@ public class Player : MonoBehaviour
 	{
 		modules = Manager.instance.modules;
 		modules.Add(ScriptableObject.CreateInstance<Jump>());
-		modules.Add(ScriptableObject.CreateInstance<Movement>());
+		//modules.Add(ScriptableObject.CreateInstance<Movement>());
         modules.Add(ScriptableObject.CreateInstance<Shooter>());
+		modules.Add(ScriptableObject.CreateInstance<Roll>());
 		//modules.Add(ScriptableObject.CreateInstance<FreeLook>()); //TODO
 		rigidbody = GetComponent<Rigidbody>();
 		//call start of each module in manager
