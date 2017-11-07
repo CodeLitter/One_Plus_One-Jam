@@ -11,17 +11,17 @@ public class Movement : Module
 	private Vector3 direction;
 
 	// Use this for initialization
-	override public void Start (Player player)
+	override public void OnStart (Player player)
 	{
 		player.rigidbody.freezeRotation = true;
 	}
 
-	override public void FixedUpdate (Player player)
+	override public void OnFixedUpdate (Player player)
 	{
 	}
 
 	// Update is called once per frame
-	override public void Update (Player player)
+	override public void OnUpdate (Player player)
 	{
 		float horizontal = CrossPlatformInputManager.GetAxis("Horizontal");
 		float vertical = CrossPlatformInputManager.GetAxis("Vertical");

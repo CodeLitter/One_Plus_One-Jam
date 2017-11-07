@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
 		//call start of each module in manager
 		foreach (var module in Manager.instance.modules)
 		{
-			module.Start(this);
+			module.OnStart(this);
 		}
 	}
 
@@ -28,7 +28,7 @@ public class Player : MonoBehaviour
 	{
 		foreach (var module in Manager.instance.modules)
 		{
-			module.FixedUpdate(this);
+			module.OnFixedUpdate(this);
 		}
 	}
 
@@ -37,7 +37,7 @@ public class Player : MonoBehaviour
 	{
 		foreach (var module in Manager.instance.modules)
 		{
-			module.Update(this);
+			module.OnUpdate(this);
 		}
 	}
 
@@ -45,7 +45,7 @@ public class Player : MonoBehaviour
 	{
 		foreach (var module in Manager.instance.modules)
 		{
-			module.LateUpdate(this);
+			module.OnLateUpdate(this);
 		}
 	}
 }

@@ -12,13 +12,13 @@ public class Jump : Module
 	private Vector3 gravity;
 
 	// Use this for initialization
-	override public void Start (Player player)
+	override public void OnStart (Player player)
 	{
 		gravity = Physics.gravity;
 	}
 	
 	// Update is called once per frame
-	override public void Update (Player player)
+	override public void OnUpdate (Player player)
 	{
 		bool is_down = CrossPlatformInputManager.GetButtonDown("Action");
 		float ground_distance = player.GetComponent<Collider>().bounds.extents.y;
