@@ -37,7 +37,7 @@ public class Shooter : Module
                 this.snowball_clone = Instantiate<GameObject>(snowball_pattern, front, Quaternion.identity) as GameObject;
             }
 
-            this.snowball_clone.GetComponent<Rigidbody>().velocity.Set(0.0f, 0.0f, 0.0f);
+			this.snowball_clone.GetComponent<Rigidbody>().velocity = Vector3.zero;
             this.snowball_clone.GetComponent<Rigidbody>().AddForce(player.transform.forward * this.speed);
         }
     }

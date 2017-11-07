@@ -21,8 +21,8 @@ public class Jump : Module
 	override public void OnUpdate (Player player)
 	{
 		bool is_down = CrossPlatformInputManager.GetButtonDown("Action");
-		float ground_distance = player.GetComponent<Collider>().bounds.extents.y;
-		bool is_grounded = Physics.Raycast(player.transform.position, Vector3.down, ground_distance + 0.1f);
+		float ground_distance = player.GetComponent<Collider>().bounds.extents.y + 0.1f;
+		bool is_grounded = Physics.Raycast(player.transform.position, Vector3.down, ground_distance);
 		if (is_down && is_grounded)
 		{
 			player.rigidbody.AddForce(0.0f, force, 0.0f, ForceMode.Impulse);
