@@ -21,7 +21,7 @@ public class Shooter : Module
     // Update is called once per frame
     override public void OnUpdate(Player player)
     {
-        bool is_down = CrossPlatformInputManager.GetButtonDown("Action");
+        bool is_down = CrossPlatformInputManager.GetButtonDown("Attack");
 
         if (is_down)
         {

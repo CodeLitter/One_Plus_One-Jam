@@ -32,12 +32,14 @@ public class DoubleJump : Module
 		//Horrible Horrible
 		if (is_down && is_grounded && firstJumpAble)
 		{
+			player.rigidbody.velocity = Vector3.zero;
 			player.rigidbody.AddForce(0.0f, force, 0.0f, ForceMode.Impulse);
 			firstJumpAble = false;
 		}
 
 		if (is_down && !is_grounded && secondJumpAble)
 		{
+			player.rigidbody.velocity = Vector3.zero;
 			player.rigidbody.AddForce(0.0f, force, 0.0f, ForceMode.Impulse);
 			secondJumpAble = false;
 		}
