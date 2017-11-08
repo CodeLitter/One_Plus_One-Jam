@@ -1,5 +1,5 @@
 narrator:none:Yeti steps out into the cold winter snow but remains unfazed by its bitter harsh sting as he begins his long trudge through the snow.
-Yuri-Chan:smile_open_eyes:"Yeti-senpai?"
+Unknown:mystery:"Yeti-senpai?"
 narrator:none:Yeti stops as he hears a familiar voice call out from behind him and turns in surprise.
 Yeti:smile_open_eyes:"Rawr?" (Yuri-Chan?)
 narrator:none:The girls cheeks blush as Yeti speaks her name.
@@ -12,4 +12,8 @@ narrator:none:yeti Raises his paw to silence her words.
 Yeti:frown_closed_eyes:Mraw Graw Graw Raw... (No don't, I know what you want to say and I...)
 narrator:none:Yeti pauses his words before turning back to the face the girl
 narrator:none:Suddenly a Wild Spanish Ninja appears
-zorro-pengu:smile_wink_eyes:Konnichiwa mi amigos.
+Spanish Ninja:smile_wink_eyes:Konnichiwa mi amigos.
+Yuri-Chan:neutral_open_eyes:"Juan?-ah I Mean Spanish Ninja. Why are you here?"
+Yeti:neutral_open_eyes:"Rawr?" (Juan?)
+Yeti:neutral_open_eyes:"Rawr Rawr Raw Rawr?" (your name is Juan?)
+Spanish Ninja:smile_wink_eyes:"But of course for I am the Juan and only Spanish Ninja"
