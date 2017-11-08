@@ -29,7 +29,7 @@ public class DoubleJump : Module
 			firstJumpAble = true;
 			secondJumpAble = true;
 		}
-
+		//Horrible Horrible
 		if (is_down && is_grounded && firstJumpAble)
 		{
 			player.rigidbody.AddForce(0.0f, force, 0.0f, ForceMode.Impulse);
