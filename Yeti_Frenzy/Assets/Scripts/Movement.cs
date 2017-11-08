@@ -16,10 +16,6 @@ public class Movement : Module
 		player.rigidbody.freezeRotation = true;
 	}
 
-	override public void OnFixedUpdate (Player player)
-	{
-	}
-
 	// Update is called once per frame
 	override public void OnUpdate (Player player)
 	{
@@ -32,8 +28,15 @@ public class Movement : Module
 			Vector3 force = Camera.main.transform.rotation * direction * speed;
 			force.y = 0.0f;
 			player.transform.forward = force;
-			force.y = player.rigidbody.velocity.y;
-			player.rigidbody.velocity = force;
+			if (!Physics.Raycast(player.transform.position, force, speed))
+			{
+				force.y = player.rigidbody.velocity.y;
+				player.rigidbody.velocity = force;
+			}
+		}
+		else
+		{
+			
 		}
 	}
 }

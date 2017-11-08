@@ -33,7 +33,6 @@ public class Jump : Module
 		{
 			Physics.gravity = gravity * positiveMultiplier;
 		}
-
 		else if (player.rigidbody.velocity.y < 0)
 		{
 			Physics.gravity = gravity * negativeMultiplier;
