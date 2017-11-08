@@ -9,12 +9,14 @@ public class TextBoxManager : MonoBehaviour
     {
         public string name;
         public string emote;
+        public string face;
         public string dialog;
 
-        public DialogLine(string Name, string Emote, string Dialog)
+        public DialogLine(string Name, string Emote, string Face, string Dialog)
         {
             name = Name;
             emote = Emote;
+            face = Face;
             dialog = Dialog;
         }
     }
@@ -25,6 +27,8 @@ public class TextBoxManager : MonoBehaviour
     public Text dialogText;
     [Space(10)]
     public Image charImage;
+    [Space(10)]
+    public Image emoteImage;
     [Space(10)]
     public Text charName;
     [Space(10)]
@@ -54,7 +58,7 @@ public class TextBoxManager : MonoBehaviour
             for (int i = 0; i < textParse.Length ; i++)
             {
                 textLine = (textParse[i].Split(':'));
-                dialogInfo[i] = new DialogLine(textLine[0], textLine[1], textLine[2]);
+                dialogInfo[i] = new DialogLine(textLine[0], textLine[1], textLine[2], textLine[3]);
             }           
         }        
         if (endLine == 0)
@@ -105,9 +109,20 @@ public class TextBoxManager : MonoBehaviour
         else
         {
             charName.text = dialogInfo[currentLine].name;
-            Sprite newSprite = Resources.Load<Sprite>(characterPath + dialogInfo[currentLine].name + "/" + dialogInfo[currentLine].emote);
+            Sprite newSprite = Resources.Load<Sprite>(characterPath + dialogInfo[currentLine].name + "/" + dialogInfo[currentLine].face);
             charImage.GetComponent<Image>().enabled = true;
             charImage.GetComponent<Image>().sprite = newSprite;
+        }
+
+        if (dialogInfo[currentLine].emote == "none")
+        {
+            emoteImage.GetComponent<Image>().enabled = false;
+        }
+        else
+        {
+            Sprite tempSprite = Resources.Load<Sprite>(characterPath + dialogInfo[currentLine].name + "/" + dialogInfo[currentLine].emote);
+            emoteImage.GetComponent<Image>().enabled = true;
+            emoteImage.GetComponent<Image>().sprite = tempSprite;
         }
     }
 
