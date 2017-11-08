@@ -21,14 +21,14 @@ public class Movement : Module
 	{
 		float horizontal = CrossPlatformInputManager.GetAxis("Horizontal");
 		float vertical = CrossPlatformInputManager.GetAxis("Vertical");
-		direction = new Vector3(horizontal, 0, vertical).normalized;
+		direction = (new Vector3(horizontal, 0, vertical)).normalized;
 
 		if (direction != Vector3.zero)
 		{
 			Vector3 force = Camera.main.transform.rotation * direction * speed;
 			force.y = 0.0f;
 			player.transform.forward = force;
-			if (!Physics.Raycast(player.transform.position, force, speed))
+			if (!Physics.Raycast(player.transform.position, force, 1.0f))
 			{
 				force.y = player.rigidbody.velocity.y;
 				player.rigidbody.velocity = force;
@@ -36,7 +36,7 @@ public class Movement : Module
 		}
 		else
 		{
-			
+			player.rigidbody.velocity = new Vector3(0, player.rigidbody.velocity.y, 0);
 		}
 	}
 }
