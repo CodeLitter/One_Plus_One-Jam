@@ -469,7 +469,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 519933560}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -311.70557, y: 194.1, z: 0}
+  m_LocalPosition: {x: -311.70557, y: 194.09998, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 968646511}
@@ -478,7 +478,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 53, y: -34}
-  m_SizeDelta: {x: 742.3, y: 328.6}
+  m_SizeDelta: {x: 925.6, y: 1051}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &519933562
 MonoBehaviour:
@@ -492,7 +492,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.13148788, g: 0.20516656, b: 0.5588235, a: 1}
+  m_Color: {r: 0.13148788, g: 0.20516656, b: 0.69, a: 0.753}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -501,7 +501,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -512,15 +512,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 2
-  m_Text: 'Issac Iralis - Lead Programmer
-
-    Patricia Sipes - Lead Artist, Modeler
-
-    Juan ''Spanish Ninja'' Gonzales - lead Production, set Designer
-
-    Nathan Contreras - fuck boi
-
-    Nicholas Guerra - programmer, poor writer'
+  m_Text: "Issac Iralas - Lead Programmer, genius \nPatricia Sipes - Lead Artist,
+    Modeler, hardest worker\nJuan 'Spanish Ninja' Gonzalez - lead Production, set
+    Designer\nNathan Contreraz - Sound Design, general nuisance\nNicholas Guerra -
+    programmer, poor writer\n\nResource Credation:\nFonts:\nBEARPAW -  Dennis Anderson
+    - https://www.fontsquirrel.com/fonts/Bearpaw\nScratched Letters - https://www.dafont.com/scratched-letters.font\n\nSkybox:\n\nTrees:\n\nSounds:\n\n\n"
 --- !u!222 &519933563
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -729,7 +725,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &968646511
 RectTransform:
   m_ObjectHideFlags: 0
