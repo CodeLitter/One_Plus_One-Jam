@@ -39,6 +39,7 @@ public class Shooter : Module
 
 			this.snowball_clone.GetComponent<Rigidbody>().velocity = Vector3.zero;
             this.snowball_clone.GetComponent<Rigidbody>().AddForce(player.transform.forward * this.speed);
+            SoundManager.getInstance().playEffect("throwing");
         }
     }
 }

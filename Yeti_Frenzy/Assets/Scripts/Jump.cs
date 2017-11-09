@@ -26,6 +26,7 @@ public class Jump : Module
 		if (is_down && is_grounded)
 		{
 			player.rigidbody.AddForce(0.0f, force, 0.0f, ForceMode.Impulse);
+            SoundManager.getInstance().playEffect("Jump");
 		}
 
 		bool is_pressed = CrossPlatformInputManager.GetButton("Action");
