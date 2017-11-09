@@ -319,6 +319,11 @@ Prefab:
       propertyPath: m_Name
       value: sign-Time
       objectReference: {fileID: 0}
+    - target: {fileID: 114558470262485784, guid: 9f85c88e4f4aa6c4b8e59e77f4af9176,
+        type: 2}
+      propertyPath: m_Text
+      value: New Text
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9f85c88e4f4aa6c4b8e59e77f4af9176, type: 2}
   m_IsPrefabParent: 0
@@ -338,7 +343,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44cf912e970e6f44d8753636331d16fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLimit: 300
+  timeLimit: 10
+  action:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: c1a958c2d5a968c4aae4e195cd0ebcd2, type: 2}
+        m_MethodName: Reload
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   text: {fileID: 0}
 --- !u!4 &541574898 stripped
 Transform:
@@ -492,7 +513,7 @@ Transform:
   m_LocalScale: {x: 25, y: 1, z: 25}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1086848230
 GameObject:
@@ -907,6 +928,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7897c1aeff896e4fa6d513020515574, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreToComplete: 1000
+  action:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: c1a958c2d5a968c4aae4e195cd0ebcd2, type: 2}
+        m_MethodName: LoadNext
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   text: {fileID: 0}
 --- !u!1 &1747591999
 GameObject:
