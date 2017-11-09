@@ -111,7 +111,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 3c8406e237665664a8a6c7998d380868, type: 2}
 --- !u!1001 &54680456
 Prefab:
   m_ObjectHideFlags: 0
@@ -2953,7 +2953,6 @@ Transform:
   - {fileID: 661906081}
   - {fileID: 595473341}
   - {fileID: 295317906}
-  - {fileID: 1593476393}
   - {fileID: 946762501}
   - {fileID: 886791753}
   - {fileID: 774647911}
@@ -2965,6 +2964,7 @@ Transform:
   - {fileID: 1985478644}
   - {fileID: 1209918095}
   - {fileID: 1083827882}
+  - {fileID: 1593476393}
   - {fileID: 439159787}
   - {fileID: 510918671}
   - {fileID: 1158262949}
@@ -2973,14 +2973,14 @@ Transform:
   - {fileID: 1846982166}
   - {fileID: 976093416}
   - {fileID: 2096133478}
+  - {fileID: 596035325}
   - {fileID: 464096196}
   - {fileID: 1254847618}
-  - {fileID: 270036001}
-  - {fileID: 763679182}
   - {fileID: 1244577766}
-  - {fileID: 596035325}
+  - {fileID: 270036001}
   - {fileID: 74424243}
   - {fileID: 828433872}
+  - {fileID: 763679182}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
