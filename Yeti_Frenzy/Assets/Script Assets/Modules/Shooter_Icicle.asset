@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: Shooter_Icicle
   m_EditorClassIdentifier: 
   speed: 1000
-  projectile: {fileID: 0}
+  projectile: {fileID: 1613841013819736, guid: 766b8f882daccac44bda112c54765f7e, type: 2}
