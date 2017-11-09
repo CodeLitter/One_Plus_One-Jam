@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 114674137975319156}
   m_Layer: 0
   m_Name: BearTarget
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -210,3 +210,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   speed: 10
+  score: 10
