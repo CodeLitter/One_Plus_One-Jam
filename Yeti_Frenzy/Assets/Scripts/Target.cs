@@ -19,12 +19,13 @@ public class Target : MonoBehaviour
 		transform.position = Vector3.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
 		if (transform.position == target.position)
 		{
-			this.gameObject.SetActive(false);
+			Destroy(gameObject);
 		}
 	}
 
 	void ApplyDamage (float amount)
 	{
 		Manager.instance.score += score;
+		Destroy(gameObject);
 	}
 }
