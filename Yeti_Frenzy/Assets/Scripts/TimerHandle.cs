@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class TimerHandle : MonoBehaviour
 {
 	public float timeLimit = 300.0f;
+	public UnityEvent action;
 	[HideInInspector]
 	public Text text;
 	private Timer timer = new Timer();
@@ -21,5 +23,10 @@ public class TimerHandle : MonoBehaviour
 	void Update ()
 	{
 		text.text = string.Format("Time Left:\n{0:0000}", (timeLimit - timer.Elapsed));
+		if (timer.Elapsed >= timeLimit)
+		{
+			action.Invoke();
+			enabled = false;
+		}
 	}
 }

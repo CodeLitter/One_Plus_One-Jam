@@ -6,6 +6,7 @@ public class Target : MonoBehaviour
 {
 	public Transform target;
 	public float speed = 10.0f;
+	public int score = 10;
 
 	// Use this for initialization
 	void Start ()
@@ -20,5 +21,10 @@ public class Target : MonoBehaviour
 		{
 			this.gameObject.SetActive(false);
 		}
+	}
+
+	void ApplyDamage (float amount)
+	{
+		Manager.instance.score += score;
 	}
 }
