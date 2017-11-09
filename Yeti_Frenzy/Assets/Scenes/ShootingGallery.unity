@@ -159,7 +159,6 @@ MonoBehaviour:
   - {fileID: 114391080190521668, guid: a9bf89d0acbb47d4bb0e7aca9a0180b6, type: 2}
   - {fileID: 114595011973494356, guid: 51c7cd02d07398d41adec58b8c159de9, type: 2}
   end: {fileID: 1086848231}
-  delay: 5
   interval: 1
 --- !u!1 &154945992
 GameObject:
@@ -343,7 +342,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44cf912e970e6f44d8753636331d16fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLimit: 10
+  delay: 5
+  start:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 138121161}
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1647146255}
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1630545983}
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  timeLimit: 300
   action:
     m_PersistentCalls:
       m_Calls:
@@ -811,7 +849,6 @@ MonoBehaviour:
   - {fileID: 114391080190521668, guid: a9bf89d0acbb47d4bb0e7aca9a0180b6, type: 2}
   - {fileID: 114595011973494356, guid: 51c7cd02d07398d41adec58b8c159de9, type: 2}
   end: {fileID: 1988613745}
-  delay: 5
   interval: 4
 --- !u!1 &1647146253
 GameObject:
@@ -860,7 +897,6 @@ MonoBehaviour:
   - {fileID: 114391080190521668, guid: a9bf89d0acbb47d4bb0e7aca9a0180b6, type: 2}
   - {fileID: 114595011973494356, guid: 51c7cd02d07398d41adec58b8c159de9, type: 2}
   end: {fileID: 1747592000}
-  delay: 5
   interval: 2
 --- !u!1001 &1673740705
 Prefab:
