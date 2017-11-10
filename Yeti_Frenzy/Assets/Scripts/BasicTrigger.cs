@@ -38,7 +38,7 @@ public class BasicTrigger : MonoBehaviour
        DONE
     }
 
-    public Tag activatorTag = "Untagged";
+    public string activatorTag = "Untagged";
     [HideInInspector]
     public GameObject activator;
     public Type type;
