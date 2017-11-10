@@ -25,5 +25,11 @@ public class Health : Module {
 	void ApplyDamage (float amount)
 	{
 		this.amount -= amount;
+        playHurtSound();
 	}
+
+    void playHurtSound()
+    {
+        SoundManager.getInstance().playEffect("Grunt");
+    }
 }
