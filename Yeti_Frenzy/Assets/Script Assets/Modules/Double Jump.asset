@@ -11,4 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87637d330e0ff60498f2a4245760eba3, type: 3}
   m_Name: Double Jump
   m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 9a6672b1212c3474e85b006f0f45fecd, type: 3}
   force: 10

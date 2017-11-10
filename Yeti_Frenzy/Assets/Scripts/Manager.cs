@@ -5,6 +5,11 @@ using UnityEngine;
 [CreateAssetMenu(menuName="Manager")]
 public class Manager : ScriptableSingleton<Manager> 
 {
-	public List<Module> modules = new List<Module>();
+	public List<Module> modules;
 	public int score;
+
+	void OnEnable ()
+	{
+		modules.Clear();
+	}
 }

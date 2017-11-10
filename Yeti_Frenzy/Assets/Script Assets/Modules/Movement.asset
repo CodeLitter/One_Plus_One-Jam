@@ -11,4 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae945488e1c9ddb449694971b34affb4, type: 3}
   m_Name: Movement
   m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 538192d8d798f0a4abe88165fcdf9a27, type: 3}
   speed: 10
