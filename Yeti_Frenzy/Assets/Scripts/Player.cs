@@ -43,4 +43,13 @@ public class Player : MonoBehaviour
 			module.OnLateUpdate(this);
 		}
 	}
+
+	void ApplyDamage (float amount)
+	{
+		var health_module = Manager.instance.modules.Find(module => module.GetType() == typeof(Health)) as Health;
+		if (health_module != null)
+		{
+			health_module.ApplyDamage(amount);
+		}
+	}
 }

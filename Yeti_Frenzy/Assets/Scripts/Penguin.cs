@@ -6,7 +6,7 @@ public class Penguin : Enemy
 {
     //-----------------------------------------------------------------------------
     // Default values for an Penguin
-    private const int HEALTHDEFAULT = 100;
+    private const int HEALTHDEFAULT = 20;
     private const int DAMAGEDEFAULT = 5;
     private const float SPEEDDEFAULT = 2;
     private const float ROTATIONSPEEDDEFAULT = 1;

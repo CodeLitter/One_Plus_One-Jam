@@ -24,7 +24,7 @@ public class Health : Module {
 		}	
 	}
 
-	void ApplyDamage (float amount)
+	public void ApplyDamage (float amount)
 	{
 		this.amount -= amount;
         playHurtSound();
