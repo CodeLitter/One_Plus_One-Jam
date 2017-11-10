@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Nutcracker : MonoBehaviour {
 
-    private const float ATTACKINTERVAL = 2.5f;
+    private const float ATTACKINTERVAL = 1.5f;
 
+	public float projectileSpeed = 100.0f;
     private float timeSinceLastAttack = 0.0f;
-    private float projectileSpeed = 100.0f;
 
     private Transform myTarget;
     private GameObject thePlayer;
