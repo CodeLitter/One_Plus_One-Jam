@@ -6,3 +6,4 @@ http://creativecommons.org/licenses/by/3.0/
 "squeaky-toy", by nsstudios
 "squeaky-dog-toy", by danmitch3ll
 "dog-toy", by fairhavencollection
+"snap-3", by snapper4298
