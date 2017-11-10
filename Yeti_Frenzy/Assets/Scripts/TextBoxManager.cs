@@ -30,6 +30,12 @@ public class TextBoxManager : MonoBehaviour
     [Space(10)]
     public Image emoteImage;
     [Space(10)]
+    public Image yeti;
+    [Space(10)]
+    public Image yuri;
+    [Space(10)]
+    public Image sn;
+    [Space(10)]   
     public Text charName;
     [Space(10)]
     public TextAsset textFile;
@@ -101,7 +107,10 @@ public class TextBoxManager : MonoBehaviour
 
     private void switchImage()
     {
-        if (dialogInfo[currentLine].name == "narrator")
+        if (dialogInfo[currentLine].name == "narrator" || dialogInfo[currentLine].name == "Yuri-Departs" 
+            || dialogInfo[currentLine].name == "SpanNin-Departs" || dialogInfo[currentLine].name == "Yeti-Departs"
+            || dialogInfo[currentLine].name == "Yuri-appears" || dialogInfo[currentLine].name == "SpanNin-appears" 
+            || dialogInfo[currentLine].name == "Yeti-appears")
         {
             charName.text = "";
             charImage.GetComponent<Image>().enabled = false;
@@ -123,6 +132,28 @@ public class TextBoxManager : MonoBehaviour
             Sprite tempSprite = Resources.Load<Sprite>(characterPath + dialogInfo[currentLine].name + "/" + dialogInfo[currentLine].emote);
             emoteImage.GetComponent<Image>().enabled = true;
             emoteImage.GetComponent<Image>().sprite = tempSprite;
+        }
+
+        switch (dialogInfo[currentLine].name)
+        {
+            case "Yeti-appears":
+                yeti.GetComponent<Image>().enabled = true;
+                break;
+            case "Yuri-appears":
+                yuri.GetComponent<Image>().enabled = true;
+                break;
+            case "SpanNin-appears":
+                sn.GetComponent<Image>().enabled = true;
+                break;
+            case "Yuri-Departs":
+                yuri.GetComponent<Image>().enabled = false;
+                break;
+            case "SpanNin-Departs":
+                sn.GetComponent<Image>().enabled = false;
+                break;
+            case "Yeti-Departs":
+                yeti.GetComponent<Image>().enabled = false;
+                break;
         }
     }
 
