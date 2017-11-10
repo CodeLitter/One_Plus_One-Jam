@@ -6,7 +6,7 @@ public class Penguin : Enemy
 {
     //-----------------------------------------------------------------------------
     // Default values for an Penguin
-    private const int HEALTHDEFAULT = 2;
+    private const int HEALTHDEFAULT = 100;
     private const int DAMAGEDEFAULT = 5;
     private const float SPEEDDEFAULT = 2;
     private const float ROTATIONSPEEDDEFAULT = 1;
@@ -299,6 +299,12 @@ public class Penguin : Enemy
         this.myHealth -= damage;
         playHurtSound();
     }
+
+	void ApplyDamage (float damage)
+	{
+		this.myHealth -= (int)damage;
+		playHurtSound();
+	}
 
     //=============================================================================
     // Plays a random hurt sound from a selection of pre-defined sounds.  Sounds
