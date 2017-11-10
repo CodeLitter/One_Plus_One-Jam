@@ -28,7 +28,7 @@ GameObject:
   - component: {fileID: 65659438645066800}
   m_Layer: 0
   m_Name: Penguino
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4aba56d9d02e1f4a9e67d455b855080, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myHealth: 1
+  myHealth: 100
 --- !u!136 &136075676261007984
 CapsuleCollider:
   m_ObjectHideFlags: 1
