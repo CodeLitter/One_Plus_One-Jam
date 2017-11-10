@@ -5,6 +5,7 @@ using UnityEngine;
 public class Generator : MonoBehaviour
 {
 	public Target[] originals;
+	public float multiplier = 1.0f;
 	public Transform end;
 	public float interval = 1.0f;
 	private Timer timer = new Timer();
@@ -22,6 +23,7 @@ public class Generator : MonoBehaviour
 			var original = originals[Random.Range(0, originals.Length)];
 			var instance = Instantiate<Target>(original, transform.position, transform.rotation);
 			instance.target = end;
+			instance.score = (int)(instance.score * multiplier);
 			timer.Reset();
 		}
 	}
