@@ -11,6 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 291c0cbe3294fa0469d8bfb227f8b1f4, type: 3}
   m_Name: Shooter_Snowball
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: caf7cbeb2073baf40ac8dd2c756be0c2, type: 3}
+  sprite: {fileID: 21300000, guid: 3195f0a5e2a02444696d7e7acdd9fb18, type: 3}
   speed: 1000
   projectile: {fileID: 1910828785212758, guid: 4655f8aff63a21140af5cca84388c007, type: 2}
