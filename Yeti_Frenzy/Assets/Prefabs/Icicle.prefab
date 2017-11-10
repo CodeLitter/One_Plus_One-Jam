@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 23978646875023804}
   - component: {fileID: 54134068859934882}
   - component: {fileID: 114801596056922436}
+  - component: {fileID: 65870444531953488}
   m_Layer: 0
   m_Name: Icicle
   m_TagString: Untagged
@@ -99,6 +100,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &65870444531953488
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1613841013819736}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.17138967, y: 0.17138967, z: 1.0664062}
+  m_Center: {x: 0, y: 0, z: -0.029807478}
 --- !u!114 &114801596056922436
 MonoBehaviour:
   m_ObjectHideFlags: 1
