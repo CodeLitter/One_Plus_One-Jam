@@ -21,9 +21,9 @@ GameObject:
   - component: {fileID: 4274101493653274}
   - component: {fileID: 33640803984529384}
   - component: {fileID: 23125814811486994}
-  - component: {fileID: 114627597411047230}
   - component: {fileID: 54290132964167842}
   - component: {fileID: 135900957606355404}
+  - component: {fileID: 114370520579866714}
   m_Layer: 0
   m_Name: Walnut
   m_TagString: Untagged
@@ -100,7 +100,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &114627597411047230
+--- !u!114 &114370520579866714
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -108,9 +108,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1842100509297322}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b470dea8a96c1914a845644fcd5c1470, type: 3}
+  m_Script: {fileID: 11500000, guid: bac0b53d1e6c9b64d96738a48b23e328, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 10
+  tags:
+  - Player
 --- !u!135 &135900957606355404
 SphereCollider:
   m_ObjectHideFlags: 1
