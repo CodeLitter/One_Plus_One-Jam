@@ -165,10 +165,10 @@ MonoBehaviour:
   audioClips:
   - {fileID: 8300000, guid: 412087c929c908b49877740f548ed0fe, type: 3}
   - {fileID: 8300000, guid: be0a5f9b4b78b7b4db895cb506c2796e, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 9488cc1b455eacf48a00a9969fe46138, type: 3}
+  - {fileID: 8300000, guid: 42a27b04364e32246b25976e1f6a273e, type: 3}
+  - {fileID: 8300000, guid: 79590363ff29ebf49bd93ee4b71a9f59, type: 3}
+  - {fileID: 8300000, guid: 1d6fdc75520fa0d41b7f3e0afe2b7d57, type: 3}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}

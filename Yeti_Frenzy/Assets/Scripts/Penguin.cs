@@ -12,7 +12,7 @@ public class Penguin : Enemy
     private const float ROTATIONSPEEDDEFAULT = 1;
     private const float ATTACKINTERVAL = 1.5f;
 
-    private float detectionRadius = 5.0f;
+    private float detectionRadius = 15.0f;
 
     private Vector3 startPos;
     private Vector3 targetDestination;
