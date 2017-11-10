@@ -15,4 +15,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 20bd45e01ef38ec44b9671d433329db1, type: 2}
   - {fileID: 11400000, guid: 0034b2085ba83f84681e2422d3a3786a, type: 2}
   - {fileID: 11400000, guid: 89d1f5c26aed0fe4b86c61567e63900b, type: 2}
-  score: 0
+  - {fileID: 11400000, guid: 9a0acf65951da1848a5ec8d7da84ec84, type: 2}
+  score: 1000

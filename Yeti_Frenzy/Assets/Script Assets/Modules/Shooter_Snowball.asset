@@ -9,6 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 291c0cbe3294fa0469d8bfb227f8b1f4, type: 3}
-  m_Name: Shooter
+  m_Name: Shooter_Snowball
   m_EditorClassIdentifier: 
   speed: 1000
+  projectile: {fileID: 1910828785212758, guid: 4655f8aff63a21140af5cca84388c007, type: 2}

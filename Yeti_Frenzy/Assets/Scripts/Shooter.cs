@@ -7,14 +7,14 @@ using UnityStandardAssets.CrossPlatformInput;
 public class Shooter : Module
 {
     public float speed = 1000.0f;              // The speed at which the projectile will move.
-    private GameObject snowball_pattern;     // The GameObject we will instatiate child gameobjects with.
+	public GameObject projectile;     		// The GameObject we will instatiate child gameobjects with.
     private GameObject snowball_clone;      // The instantiated game object, which calculations/physics will be performed on.
 
     //-------------------------------------------------------------------------
     // Use this for initialization
     override public void OnStart(Player player)
     {
-        this.snowball_pattern = Resources.Load("Snowball") as GameObject;
+        //this.projectile = Resources.Load("Snowball") as GameObject;
     }
 
     //-------------------------------------------------------------------------
@@ -31,10 +31,11 @@ public class Shooter : Module
             if (snowball_clone)
             {
                 this.snowball_clone.transform.position = front;
+				this.snowball_clone.SetActive(true);
             }
             else
             { 
-                this.snowball_clone = Instantiate<GameObject>(snowball_pattern, front, Quaternion.identity) as GameObject;
+                this.snowball_clone = Instantiate<GameObject>(projectile, front, Quaternion.identity) as GameObject;
             }
 
 			this.snowball_clone.GetComponent<Rigidbody>().velocity = Vector3.zero;
