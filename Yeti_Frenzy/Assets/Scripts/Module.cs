@@ -4,6 +4,7 @@ using UnityEngine;
 
 public abstract class Module : ScriptableObject
 {
+	public Sprite sprite;
 
 	// Use this for initialization
 	virtual public void OnStart (Player player) {}
