@@ -6,6 +6,7 @@ using UnityEngine;
 public class Health : Module {
 
 	public float amount = 100.0f;
+	public UnityEngine.Events.UnityEvent onDeath;
 
 	// Use this for initialization
 	override public void OnStart (Player player)
@@ -18,12 +19,19 @@ public class Health : Module {
 	{
 		if (amount <= 0.0f)
 		{
-			player.gameObject.SetActive(false);
+			amount = 100.0f;
+			onDeath.Invoke();
 		}	
 	}
 
 	void ApplyDamage (float amount)
 	{
 		this.amount -= amount;
+        playHurtSound();
 	}
+
+    void playHurtSound()
+    {
+        SoundManager.getInstance().playEffect("Grunt");
+    }
 }

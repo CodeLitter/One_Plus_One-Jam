@@ -51,6 +51,8 @@ public class TextBoxManager : MonoBehaviour
     private bool cancelTyping = false;
     [Space(10)]
     public float typeSpeed;
+	[Space(10)]
+	public UnityEngine.Events.UnityEvent onEnd;
 
     private string characterPath = "CharacterSprites/";
 
@@ -89,11 +91,12 @@ public class TextBoxManager : MonoBehaviour
         {
             currentLine += 1;
 
-            if (currentLine > endLine)
-            {
-                currentLine = endLine;
-            }
-            else
+			if (currentLine > endLine)
+			{
+				currentLine = endLine;
+				onEnd.Invoke();
+			}
+			else
             {
                 switchImage();
                 StartCoroutine(TextScroll(dialogInfo[currentLine].dialog));
