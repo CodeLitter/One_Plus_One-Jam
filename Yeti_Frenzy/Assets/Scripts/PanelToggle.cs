@@ -4,16 +4,33 @@ using UnityEngine;
 
 public class PanelToggle : MonoBehaviour
 {
-    public GameObject panel;
+    public GameObject credits;
+    public GameObject instructions;
 
-    public void openPanel()
+    public void openCredits()
     {
-        panel.SetActive(true);
+        if (!instructions.activeSelf)
+        {
+            credits.SetActive(true);
+        }        
     }
 
-    public void closePanel()
+    public void closeCredits()
     {
-        panel.SetActive(false);
+        credits.SetActive(false);
+    }
+
+    public void openInstructions()
+    {
+        if (!credits.activeSelf)
+        {
+            instructions.SetActive(true);
+        }
+    }
+
+    public void closeInstructions()
+    {
+        instructions.SetActive(false);
     }
 
 }
