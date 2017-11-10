@@ -74,3 +74,4 @@ Spanish Ninja:none:neutral_open_eyes:"Sorry Mi Amigo but I need this, my backs b
 SpanNin-Departs:none:none:Spanish Ninja starts to gallop away through the snow towards the village.
 Yeti:anger:frown_open_eyes:"RAWRRRR!!!!" (Hey that's My coupon you scoundrel!!!!!!)
 Yeti-Departs:none:none:Yeti takes off through the Snow After the Spanish Ninja.
+:::

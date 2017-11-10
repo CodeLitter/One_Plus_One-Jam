@@ -113,7 +113,7 @@ public class TextBoxManager : MonoBehaviour
         if (dialogInfo[currentLine].name == "narrator" || dialogInfo[currentLine].name == "Yuri-Departs" 
             || dialogInfo[currentLine].name == "SpanNin-Departs" || dialogInfo[currentLine].name == "Yeti-Departs"
             || dialogInfo[currentLine].name == "Yuri-appears" || dialogInfo[currentLine].name == "SpanNin-appears" 
-            || dialogInfo[currentLine].name == "Yeti-appears")
+            || dialogInfo[currentLine].name == "Yeti-appears" || dialogInfo[currentLine].emote == "")
         {
             charName.text = "";
             charImage.GetComponent<Image>().enabled = false;
@@ -126,7 +126,7 @@ public class TextBoxManager : MonoBehaviour
             charImage.GetComponent<Image>().sprite = newSprite;
         }
 
-        if (dialogInfo[currentLine].emote == "none")
+        if (dialogInfo[currentLine].emote == "none" || dialogInfo[currentLine].emote == "")
         {
             emoteImage.GetComponent<Image>().enabled = false;
         }
