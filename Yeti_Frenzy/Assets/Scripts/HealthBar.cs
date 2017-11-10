@@ -5,71 +5,24 @@ using UnityEngine;
 
 public class HealthBar : MonoBehaviour
 {
-    public float maxHealth;
-    public float minHealth;
-    public float currentHealth;
+	[HideInInspector]
+	public Slider slider;
+	private Health health;
 
-    private bool alive;
-
-    private Slider slider;
-
-    public bool Alive
-    {
-        get
-        {
-            return alive;
-        }
-
-        set
-        {
-            alive = value;
-        }
-    }
-    
     void Start ()
     {
         slider = GetComponent<Slider>();
-        currentHealth = slider.value;
-        maxHealth = slider.maxValue;
-        minHealth = slider.minValue;
-
     }
 	
 	void Update ()
     {
-        slider.value = currentHealth;
-
-        if (currentHealth == minHealth)
-        {
-            alive = false;
-        }
-        else
-        {
-            alive = true;
-        }
+		if (health != null)
+		{
+			slider.value = health.amount;
+		}
+		else
+		{
+			health = Manager.instance.modules.Find(module => module.GetType() == typeof(Health)) as Health;
+		}
 	}
-
-    public void addDamage(int damageAmount)
-    {
-        currentHealth -= damageAmount;
-        if (currentHealth < minHealth)
-        {
-            currentHealth = minHealth;
-        }
-    }
-
-    public void addHealth(int healthAmount)
-    {
-        currentHealth += healthAmount;
-
-        if (currentHealth > maxHealth)
-        {
-            currentHealth = maxHealth;
-        }
-    }
-
-    public float healthAmount()
-    {
-        return currentHealth;
-    }
 }
