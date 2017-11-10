@@ -598,15 +598,16 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1.5
+    m_LineSpacing: 1.2
   m_Text: "Issac Iralas - Lead Programmer, genius \nPatricia Sipes - Lead Artist,
     Modeler, hardest worker\nJuan 'Spanish Ninja' Gonzalez - lead Production, set
     Designer\nNathan Contreraz - Sound Design, general nuisance\nNicholas Guerra -
     programmer, poor writer\n\nResource Credation:\nFonts:\nBEARPAW -  Dennis Anderson
     - https://www.fontsquirrel.com/fonts/Bearpaw\nScratched Letters - https://www.dafont.com/scratched-letters.font\nSkybox:
-    http://70-30.de/\n\nSounds:\n\"Relaxing Piano Music\", \"Poppers and Prosecco\",
-    \"Instractable\", \"Despair and Triumph\", \"There is Romance\"\r\nKevin MacLeod
-    (incompetech.com)\r\nLicensed under Creative Commons: By Attribution 3.0\r\nhttp://creativecommons.org/licenses/by/3.0/\r\n\"squeaky-toy\",
+    http://70-30.de/\n\nTrees:\nhttps://falsewispstudios.wordpress.com/2016/11/23/snowy-low-poly-trees/\n\nSounds:\n\"Relaxing
+    Piano Music\", \"Poppers and Prosecco\", \"Instractable\", \"Despair and Triumph\",
+    \"There is Romance\"\r\nKevin MacLeod (incompetech.com)\r\nLicensed under Creative
+    Commons: By Attribution 3.0\r\nhttp://creativecommons.org/licenses/by/3.0/\r\n\"squeaky-toy\",
     by nsstudios\r\n\"squeaky-dog-toy\", by danmitch3ll\r\n\"dog-toy\", by fairhavencollection\r\n\"snap-3\",
     by snapper4298\n\n"
 --- !u!222 &519933563
@@ -876,7 +877,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &968646511
 RectTransform:
   m_ObjectHideFlags: 0
