@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Name: Manager
   m_EditorClassIdentifier: 
   modules:
-  - {fileID: 11400000, guid: 20bd45e01ef38ec44b9671d433329db1, type: 2}
-  - {fileID: 11400000, guid: 0034b2085ba83f84681e2422d3a3786a, type: 2}
-  - {fileID: 11400000, guid: 89d1f5c26aed0fe4b86c61567e63900b, type: 2}
+  - {fileID: 11400000, guid: 679409bb9f7115845b5c0e04e4565622, type: 2}
+  - {fileID: 11400000, guid: c06ba8e9994565444be750c10ab688ab, type: 2}
   - {fileID: 11400000, guid: 30844aaf1991dec44891adfdde4da44c, type: 2}
+  - {fileID: 11400000, guid: 89d1f5c26aed0fe4b86c61567e63900b, type: 2}
   score: 0

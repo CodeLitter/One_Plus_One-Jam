@@ -11,4 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cb423209bd22f5479a2805d4e8a5a54, type: 3}
   m_Name: Roll
   m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 3573ee747bc50584cbaf744616a4daab, type: 3}
   speed: 10

@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d483b64750826ed46b08c7cc2acaae39, type: 3}
   m_Name: Health
   m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: a4590fa00ac7207439b193186c70101f, type: 3}
   amount: 100
   onDeath:
     m_PersistentCalls:

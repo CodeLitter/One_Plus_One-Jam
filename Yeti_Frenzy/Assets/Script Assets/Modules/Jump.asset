@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac4510d25a9d7934aa66a5023952d286, type: 3}
   m_Name: Jump
   m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 13b38bd2f070c854a9a3c3a525b14229, type: 3}
   force: 10
   positiveMultiplier: 0.5
   negativeMultiplier: 2

@@ -11,4 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41dbab439cd21cb47b3979ec97be2ff2, type: 3}
   m_Name: Strafe
   m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: f62bc5e9bad550b4e970acdb75269a39, type: 3}
   speed: 10
