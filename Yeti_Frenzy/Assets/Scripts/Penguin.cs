@@ -168,7 +168,7 @@ public class Penguin : Enemy
     // If something enters the trigger box, do something based upon it's type.
     void OnTriggerStay(Collider other)
     {
-        if (other.transform.name.Equals("Kira") && this.myState != enState.ATTACK)
+        if (other.transform.name.Equals("yeti") && this.myState != enState.ATTACK)
         {
             this.myState = enState.ATTACK;
             this.targetIsPlayer = false;
@@ -255,7 +255,7 @@ public class Penguin : Enemy
         if (timeSinceLastAttack <= 0.0f)
         {
             //do damage to player.
-            SoundManager.getInstance().playEffect("Grunt");
+            //SoundManager.getInstance().playEffect("Grunt");
             thePlayer.SendMessage("ApplyDamage", 10.0f);
      
             timeSinceLastAttack += Time.deltaTime;
